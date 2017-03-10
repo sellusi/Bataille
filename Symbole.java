@@ -12,7 +12,11 @@ public class Symbole {
 		return nom;
 	}
 	public void setNom(String nom) {
-		this.nom = nom;
+		if (nom.equals("Coeur")||nom.equals("Carreau")||nom.equals("Trèfle")||nom.equals("Pique")){
+			this.nom = nom;
+		}
+		else
+			System.out.println("invalide");
 	}
 	public String getCouleur(){
 		if(nom.equals("Coeur")||nom.equals("Carreau"))
