@@ -4,7 +4,10 @@ public class Symbole {
 	Symbole(String nom) {
 		this.nom = nom;
 	}
-	
+	@Override
+	public String toString() {
+		return "Symbole [nom=" + nom + ", Couleur=" + getCouleur() + "]";
+	}
 	public String getNom() {
 		return nom;
 	}
@@ -12,6 +15,10 @@ public class Symbole {
 		this.nom = nom;
 	}
 	public String getCouleur(){
-		return "rouge";
+		if(nom.equals("Coeur")||nom.equals("Carreau"))
+			return "rouge";
+		else if(nom.equals("Trèfle")||nom.equals("Pique"))
+			return "noir";
+		return null;
 	}
 }
