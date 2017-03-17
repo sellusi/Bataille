@@ -11,7 +11,7 @@ public class Joueur {
 	}
 	
 	int getNbrCartes(){
-		
+		return tas.getTaille();
 	}
 	
 	void prendreCarte(carte c){
