@@ -21,7 +21,7 @@ public class Bataille {
 			}
 		}
 	}
-	
+
 	private void distribuer(){
 		while (!jeu.estVide()){
 			j1.prendreCarte(jeu.getPremiereCarte());
