@@ -6,7 +6,7 @@ public class Symbole {
 	}
 	@Override
 	public String toString() {
-		return "Symbole [nom=" + nom + ", Couleur=" + getCouleur() + "]";
+		return  nom;
 	}
 	public String getNom() {
 		return nom;

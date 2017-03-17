@@ -11,6 +11,10 @@ public class Jeu52 extends JeuDeCartes {
 
 	@Override
 	void remplirUnJeu() {
-
+		for(Hauteur h : Hauteur.values()){				//hauteur
+			for(int j=0 ; j < 4 ;j++){					//symboles
+				this.ajouterCarte(new carte(h,JeuDeCartes.LES_SYMBOLES[j] ));
+			}
+		}
 	}
 }

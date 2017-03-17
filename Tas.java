@@ -33,7 +33,7 @@ public class Tas {
 
 	@Override
 	public String toString() {
-		return "Tas [lesCartes=" + lesCartes + ", nom=" + nom + "]";
+		return lesCartes + ":" + nom;
 	}
 
 	public void setNom(String nom) {

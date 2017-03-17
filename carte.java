@@ -17,6 +17,6 @@ public class carte {
 
 	@Override
 	public String toString() {
-		return "Carte [hauteur=" + hauteur + ", symbole=" + symbole + "]";
+		return  hauteur + "de" + symbole;
 	}
 }

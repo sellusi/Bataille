@@ -11,11 +11,12 @@ public class Jeu32 extends JeuDeCartes {
 
 	@Override
 	void remplirUnJeu() {
-		int i;
-		for (i=0;i<32;i++){
-			
+		for(Hauteur h : Hauteur.values()){				//hauteur
+			for(int j=0 ; j < 4 ;j++){					//symboles
+				if(h.getValeur()>6)
+					this.ajouterCarte(new carte(h,JeuDeCartes.LES_SYMBOLES[j] ));
+			}
 		}
 	}
-
 	
 }

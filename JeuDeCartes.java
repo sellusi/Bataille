@@ -10,7 +10,7 @@ public abstract class JeuDeCartes extends Tas implements Melangeable,Ordre{
 	}
 
 
-	final Symbole[] LES_SYMBOLES = {new Trefle(),
+	final static Symbole[] LES_SYMBOLES = {new Trefle(),
 									new Pique(),
 									new Coeur(),
 									new Carreau()
@@ -39,11 +39,11 @@ public abstract class JeuDeCartes extends Tas implements Melangeable,Ordre{
 			while(!t1.estVide()&&!t2.estVide()){
 				this.ajouterCarte(t1.getPremiereCarte());
 				this.ajouterCarte(t2.getPremiereCarte());
-			}
-			if(t1.estVide())
+			if(!t1.estVide())
 				this.ajouterTous(t2);
-			else if(t2.estVide())
+			else if(!t2.estVide())
 				this.ajouterTous(t1);
+			}
 		}
 	}
 	
