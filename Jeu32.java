@@ -6,24 +6,16 @@ public class Jeu32 extends JeuDeCartes {
 
 	@Override
 	public int getCoupe() {
-		return Math.random()-32;
-	}
-
-	@Override
-	public void battre(int m) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public int comparerCartes(carte c1, carte c2) {
-		// TODO Auto-generated method stub
-		return 0;
+		return (int) ((Math.random() * 31)+1);
 	}
 
 	@Override
 	void remplirUnJeu() {
-		// TODO Auto-generated method stub
-		
+		int i;
+		for (i=0;i<32;i++){
+			
+		}
 	}
+
+	
 }
